@@ -7,7 +7,6 @@ sudo yum update -y
 sudo yum install -y docker
 sudo usermod -a -G docker ec2-user
 sudo service docker start
-# sudo docker run --rm -e EULA=TRUE -p 25565:25565 --name mc itzg/minecraft-server
 
 # docker-compose
 
@@ -20,7 +19,7 @@ sudo docker-compose --version
 
 sudo yum install -y git
 
-# insatall/run mincraft 
+# insatall/run minecraft 
 
 git clone https://github.com/eritikass/minecraft-server-docker.git
 cd minecraft-server-docker
