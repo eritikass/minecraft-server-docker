@@ -6,7 +6,7 @@
 
 ## 
 
- * Crete Security Group for minecraft
+ * Create Security Group for minecraft
     - allows incoming tcp "25565"
  * Create new EC2 machine using AWS LINUX ( `Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type` )
     - use [bootstrap-script.sh](./bootstrap-script.sh)
