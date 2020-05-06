@@ -9,4 +9,5 @@ aws ec2 run-instances \
     --key-name=home1 \
     --security-group-ids=$SECURITY_GROUP_IDS \
     --user-data=file://bootstrap-script.sh \
+    --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=minecraft-server}]' \
     --query='Instances[*].{InstanceId:InstanceId,IP:PrivateIpAddress}' --output table
