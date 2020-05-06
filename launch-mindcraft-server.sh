@@ -9,4 +9,4 @@ aws ec2 run-instances \
     --key-name=home1 \
     --security-group-ids=$SECURITY_GROUP_IDS \
     --user-data=file://bootstrap-script.sh \
-    --output=table
+    --query='Instances[*].{InstanceId:InstanceId,IP:PrivateIpAddress}' --output table
